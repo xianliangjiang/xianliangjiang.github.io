@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="icon" href="resource/favicon.ico">
+        <link rel="stylesheet" href="resource/course.css" type="text/css" />
+        <meta name="description" content="Jiang's Homepage"/>
+        <meta name="keywords" content="Xianliang Jiang, NBU, ZJU, CS, IoT"/>
+        <meta name="author" content="Xianliang Jiang"/>
+        <title>Xianliang Jiang</title>
+    </head>
+
+    <body>
+        <table summary="Table for page layout." id="tlayout">
+            <tr valign="top">
+                <td id="layout-menu">
+                    <!--img src="./img/wechat.png" alt="alt text" width="150px" height="150px" /-->
+                    <div class="menu-category">OS 106F14A</div>
+                    <div class="menu-item"><a href="index.html#overview">Overview</a></div>
+                    <div class="menu-item"><a href="index.html#schedule">Schedule</a></div>
+                    <div class="menu-item"><a href="index.html#prerequisites">Prerequisites</a></div>
+                    <div class="menu-item"><a href="index.html#contact">Contact</a></div>
+                    <div class="menu-category">Resources</div>
+                    <div class="menu-item"><a href="resource.html#textbook">Textbook</a></div>
+                    <div class="menu-item"><a href="resource.html#slides">Courseware</a></div>
+                    <div class="menu-item"><a href="resource.html#quizzes">Quizzes</a></div>
+                    <div class="menu-item"><a href="resource.html#homework">Homework</a></div>
+                    <div class="menu-item"><a href="resource.html#experiment">Experiments</a></div>
+                    <div class="menu-item"><a href="resource.html#gpolicy">Grading Policy</a></div>
+                    <div class="menu-item"><a href="resource.html#cpolicy">Class Policy</a></div>
+                </td>
+                <td id="layout-content">
+                    <div id="toptitle" style="text-align: center">
+                        <h1>Operating System (106F14A)</h1>
+                        <div id="subtitle"><a href="http://www.thinkmesh.net/~jiangxl/">Xianliang Jiang</a>, <a href="http://eecs.nbu.edu.cn/">FEECS</a> of Ningbo University, Fall Semester 2017.</div>
+                    </div>
+
+                    <h2 id="overview">Overview</h2>
+                    <p style="text-align: justify">
+                        The purpose of this course is to teach the design and concepts of operating systems. Topics will cover the concepts of operating system structure, process, thread, process synchronization, CPU
+                        scheduling, physical and virtual memory, mass storage, file system, Input/output systems, etc.
+                    </p>
+
+                    <h2 id="schedule">Schedule</h2>
+                    <div class="infoblock">
+                        <div class="blockcontent">
+                            <strong><font color="red">Note</font></strong>: All resources for 106F14A class can be found in the "<strong>Resource</strong>" option.
+                        </div>
+                    </div>
+                    <table align="center">
+                        <tr>
+                            <td>Week</td>
+                            <td>Date</td>
+                            <td>Period</td>
+                            <td>Teaching Content</td>
+                            <td>Teaching Method</td>
+                            <td>Keynotes</td>
+                            <td>Practice</td>
+                            <td>Remarks</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">1</td>
+                            <td>2017/9/11</td>
+                            <td>2(1-2)</td>
+                            <td>OS Introduction I</td>
+                            <td>Theory</td>
+                            <td>the basic organization of computer systems, the major components of operating systems</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/9/12</td>
+                            <td>3(7-9)</td>
+                            <td>Install Linux System</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/9/13</td>
+                            <td>2(3-4)</td>
+                            <td>OS Introduction II</td>
+                            <td>Theory</td>
+                            <td>computing environments, open-source operating systems</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">2</td>
+                            <td>2017/9/18</td>
+                            <td>2(1-2)</td>
+                            <td>Operating-System Structures I</td>
+                            <td>Theory</td>
+                            <td>operating system services, user operating system interface, system calls, types of system calls, system programs</td>
+                            <td>Practice Exercises (textbook): 1.1, 1.5, 1.6, 1.10</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/9/19</td>
+                            <td>3(7-9)</td>
+                            <td>Linux command practice</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/9/20</td>
+                            <td>2(3-4)</td>
+                            <td>Operating-System Structures II</td>
+                            <td>Theory</td>
+                            <td>operating system design and implementation, operating system structure, operating system debugging, operating system generation, system boot</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">3</td>
+                            <td>2017/9/25</td>
+                            <td>2(1-2)</td>
+                            <td>Processes I</td>
+                            <td>Theory</td>
+                            <td>process concept, process scheduling, operations on processes</td>
+                            <td>Practice Exercises (textbook): 2.6, 2.9</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/9/26</td>
+                            <td>3(7-9)</td>
+                            <td>Shell Programming</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/9/27</td>
+                            <td>2(3-4)</td>
+                            <td>Processes II</td>
+                            <td>Theory</td>
+                            <td>interprocess communication, examples of IPC systems, communication in client-server systems</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="color: #880000">
+                            <td rowspan="3">4</td>
+                            <td>2017/10/02</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td rowspan="3">National Day holiday</td>
+                        </tr>
+                        <tr style="color: #880000">
+                            <td>2017/10/03</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="color: #880000">
+                            <td>2017/10/04</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">5</td>
+                            <td>2017/10/09</td>
+                            <td>2(1-2)</td>
+                            <td>Threads I</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/10/10</td>
+                            <td>3(7-9)</td>
+                            <td>Process Creation and Management</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/10/11</td>
+                            <td>2(3-4)</td>
+                            <td>Threads II</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">6</td>
+                            <td>2017/10/16</td>
+                            <td>2(1-2)</td>
+                            <td>Process Synchronization I</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/10/17</td>
+                            <td>3(7-9)</td>
+                            <td>Inter-Process Communication</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/10/18</td>
+                            <td>2(3-4)</td>
+                            <td>Process Synchronization II</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">7</td>
+                            <td>2017/10/23</td>
+                            <td>2(1-2)</td>
+                            <td>CPU Scheduling I</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/10/24</td>
+                            <td>3(7-9)</td>
+                            <td>Process Synchronization and Mutex (I)</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/10/25</td>
+                            <td>2(3-4)</td>
+                            <td>CPU Scheduling II</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">8</td>
+                            <td>2017/10/30</td>
+                            <td>2(1-2)</td>
+                            <td>Main Memory</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/10/31</td>
+                            <td>3(7-9)</td>
+                            <td>Process Synchronization and Mutex (II)</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/11/01</td>
+                            <td>2(3-4)</td>
+                            <td>Virtual Memory</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">13</td>
+                            <td>2017/12/04</td>
+                            <td>2(1-2)</td>
+                            <td>Review previous contents</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/05</td>
+                            <td>3(7-9)</td>
+                            <td>CPU Scheduling</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/06</td>
+                            <td>2(3-4)</td>
+                            <td>Mass-Storage Systems I</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">14</td>
+                            <td>2017/12/11</td>
+                            <td>2(1-2)</td>
+                            <td>Mass-Storage Systems II</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/12</td>
+                            <td>3(7-9)</td>
+                            <td>Memory Management and Page Replacement Algorithms</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/13</td>
+                            <td>2(3-4)</td>
+                            <td>File System I</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">15</td>
+                            <td>2017/12/18</td>
+                            <td>2(1-2)</td>
+                            <td>File System II</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/19</td>
+                            <td>3(7-9)</td>
+                            <td>Disk Scheduling Algorithms</td>
+                            <td>Experiment</td>
+                            <td>see "<strong>Experiments</strong>" option</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/20</td>
+                            <td>2(3-4)</td>
+                            <td>File System III</td>
+                            <td>Theory</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">16</td>
+                            <td>2017/12/25</td>
+                            <td>2(1-2)</td>
+                            <td></td>
+                            <td>Theory</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/26</td>
+                            <td>3(7-9)</td>
+                            <td></td>
+                            <td>Experiment</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2017/12/27</td>
+                            <td>2(3-4)</td>
+                            <td></td>
+                            <td>Theory</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="color: #AA0000">
+                            <td rowspan="3">17</td>
+                            <td>2018/01/01</td>
+                            <td>2(1-2)</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>New Year's Holiday</td>
+                        </tr>
+                        <tr>
+                            <td>2018/01/02</td>
+                            <td>3(7-9)</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Review</td>
+                        </tr>
+                        <tr>
+                            <td>2018/01/03</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Final Exam</td>
+                        </tr>
+                    </table>
+
+                    <h2 id="prerequisites">Prerequisites</h2>
+                    <p style="text-align: justify">To learn OS efficiently, you should learn some prerequisite courses. They are listed as follows:</p>
+                    <ul class="list">
+                        <li>Computer Organization</li>
+                        <li>Computer Architecture</li>
+                        <li>Data Structure and Algorithm</li>
+                        <li>C/C++ Programming Language</li>
+                    </ul>
+
+                    <h2 id="contact">Contact</h2>
+                    <p style="text-align: justify">
+                        <strong>Instructor</strong>：Xianliang Jiang, <strong>Office Address</strong>: Room 305, Cao Guang Biao Information Building, Ningbo University, Ningbo, China.
+                        <strong>E-mail</strong>：jiangxianliang [AT] nbu.edu.cn, <strong>Phone</strong>：13616880564/660564 <br />
+                        <strong>Teaching Assistant</strong>：Zining Shang, <strong>E-mail</strong>：sznwakakaka@163.com, <strong>Phone</strong>：15058863109/663109
+                    </p>
+
+                    <div id="footer" >
+                        <div id="footer-text">
+                            Copyright &copy;&nbsp;2017 by <a href="../../../index.html">Xianliang Jiang.</a>
+                            <script type="text/javascript">
+                                document.write("Last updated "+new Date(document.lastModified).toUTCString());
+                            </script>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" } } });
+        </script>
+    </body>
+
+</html>
